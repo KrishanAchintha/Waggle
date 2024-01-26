@@ -1,0 +1,69 @@
+.main_menu_container{
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+}
+
+.menu_container {
+    -fx-padding: 15 10 10 10;
+    -fx-spacing: 20;
+}
+
+.menu_container Button{
+    -fx-pref-width: 180;
+    -fx-pref-height: 35;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-font-family: "open sans";
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-alignment: center_left;
+    -fx-padding: 0 0 0 20;
+    -fx-effect: dropshadow(three-pass-box ,#DDDDDD, 5, 0, 0, 6);
+}
+
+.menu_container ImageView{
+    -fx-pref-width: 20;
+    -fx-pref-height: 20;
+    -fx-alignment: center_left;
+}
+.menu_container Button:hover{
+    -fx-background-color: E4F9F5FF;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+}
+
+.menu_container Button:focused{
+    -fx-background-color: #E4F9F5;
+    -fx-effect: dropshadow(three-pass-box ,#DDDDDD, 5, 0, 0,6);
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+
+}
+
+.alt_menu{
+    -fx-alignment: center;
+    -fx-spacing: 20;
+
+}
+.alt_menu Button{
+    -fx-pref-width: 20;
+    -fx-pref-height: 20;
+    -fx-spacing: 20px;
+    -fx-background-color: #ffffff;
+}
+
+.alt_menu Button:hover{
+    -fx-background-color: #E4F9F5;
+    -fx-effect: dropshadow(three-pass-box ,#11999E, 5, 0, 0, 0);
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+    -fx-background-radius: 20px;
+}
+
+
+
+
+
+
+
+
