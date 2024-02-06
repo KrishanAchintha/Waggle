@@ -55,3 +55,20 @@
     -fx-text-fill: #00BE98;
     -fx-font-weight:bold;
 }
+
+.Button{
+
+    -fx-background-color: #BFF2E8;
+    -fx-background-radius: 6px;
+    -fx-padding: 0 8 0 8;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.Button:hover{
+    -fx-background-color: #00BE98;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box ,#11999E, 5, 0, 0, 0);
+}

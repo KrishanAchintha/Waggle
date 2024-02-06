@@ -1,6 +1,7 @@
-package com.example.waggle.Controllers.Menu;
+package com.example.waggle.Controllers.Menu.Animal;
 
 
+import com.example.waggle.Models.Models;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -19,11 +20,17 @@ public class AnimalController implements Initializable {
     public Label PersonNameInAnimal;
     public Label PersonRoleInAniimal;
     public Button AddAnimal;
-    public Button AddAnimal1;
     public TextFlow textflow;
+    public Button store;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        addListner();
+    }
+    private void addListner() {
+        AddAnimal.setOnAction(event -> AddAnimalForm());
+    }
+    private void AddAnimalForm() {
+        Models.getInstance().getViewManage().getClientSelectedMenuItem().set("AddAnimal");
     }
 }

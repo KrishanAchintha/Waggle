@@ -12,9 +12,24 @@ public class Viewfactory {
 
 
     private final StringProperty clientSelectedMenuItem;
+
+
     private AnchorPane dashboardview;
     private AnchorPane animalview;
     private AnchorPane sponsorview;
+    private AnchorPane Keepinview;
+    private AnchorPane voluenteersview;
+    private AnchorPane Almsview;
+    private AnchorPane Advertisementsview;
+    private AnchorPane Missingview;
+    private AnchorPane Reportview;
+    private AnchorPane Fundsview;
+
+
+    private AnchorPane addAnimalFormView;
+
+
+
 
 
 
@@ -40,11 +55,10 @@ public class Viewfactory {
         }
         return sponsorview;
     }
-
     public AnchorPane getAnimalview() {
         if (animalview == null) {
             try {
-                animalview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Animal.fxml")).load();
+                animalview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Animal/Animal.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -61,7 +75,55 @@ public class Viewfactory {
         }
         return dashboardview;
     }
+    public AnchorPane getKeepinview() {
+        if (Keepinview == null) {
+            try {
+                Keepinview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Keeping.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Keepinview;
+    }
+    public AnchorPane getAlmsview() {
+        if (Almsview == null) {
+            try {
+                Almsview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Alms.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Almsview;
+    }
+    public AnchorPane getVoluenteersview() {
+        if (voluenteersview == null) {
+            try {
+                voluenteersview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Volunteer.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return voluenteersview;
+    }
 
+
+
+
+
+
+
+
+
+    public AnchorPane getAddAnimalFormView() {
+        if (addAnimalFormView == null) {
+            try {
+                addAnimalFormView = new FXMLLoader(getClass().getResource("/Fxml/Menu/Animal/AddAnimalForm.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return addAnimalFormView;
+    }
 
 
     public void showLogin(){

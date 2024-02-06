@@ -19,7 +19,10 @@ public class ClientController  implements Initializable{
 
                 case "Animal" -> Client_parent.setCenter(Models.getInstance().getViewManage().getAnimalview());
                 case "Sponsor" -> Client_parent.setCenter(Models.getInstance().getViewManage().getSponsorview());
-
+                case "AddAnimal" -> Client_parent.setCenter(Models.getInstance().getViewManage().getAddAnimalFormView());
+                case "Keeping" -> Client_parent.setCenter(Models.getInstance().getViewManage().getKeepinview());
+                case "Volunteers" -> Client_parent.setCenter(Models.getInstance().getViewManage().getVoluenteersview());
+                case "Alms" -> Client_parent.setCenter(Models.getInstance().getViewManage().getAlmsview());
                 default -> Client_parent.setCenter(Models.getInstance().getViewManage().getDashboardview());
             }
         });

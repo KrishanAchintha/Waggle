@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.KeepingController">
+   <children>
+      <Label layoutX="382.0" layoutY="264.0" text="Keeping">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

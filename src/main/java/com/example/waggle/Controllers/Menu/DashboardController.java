@@ -13,4 +13,7 @@ public class DashboardController implements Initializable
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+    public static class KeepingController {
+    }
 }
