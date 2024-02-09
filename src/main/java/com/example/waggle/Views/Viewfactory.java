@@ -106,7 +106,46 @@ public class Viewfactory {
         return voluenteersview;
     }
 
-
+    public AnchorPane getAdvertisementsview() {
+        if (Advertisementsview == null) {
+            try {
+                Advertisementsview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Advertisement.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Advertisementsview;
+    }
+    public AnchorPane getMissingview() {
+        if (Missingview == null) {
+            try {
+                Missingview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Missing.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Missingview;
+    }
+    public AnchorPane getReportview() {
+        if (Reportview == null) {
+            try {
+                Reportview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Reports.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Reportview;
+    }
+    public AnchorPane getFundsview() {
+        if (Fundsview == null) {
+            try {
+                Fundsview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Funds.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Fundsview;
+    }
 
 
 

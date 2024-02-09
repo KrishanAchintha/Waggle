@@ -70,7 +70,7 @@ public class MenuController  implements Initializable{
     }
 
     public void onAdvertisement() {
-        Models.getInstance().getViewManage().getClientSelectedMenuItem().set("Advertisement");
+        Models.getInstance().getViewManage().getClientSelectedMenuItem().set("Advertisements");
     }
 
     public void onMissing() {
