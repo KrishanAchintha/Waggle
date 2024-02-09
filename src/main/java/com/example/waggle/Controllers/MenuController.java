@@ -22,6 +22,7 @@ public class MenuController  implements Initializable{
     public Button Notification_btn;
     public Button Setting_btn;
     public Button Message_btn;
+    public Button Waggle_btn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -39,6 +40,7 @@ public class MenuController  implements Initializable{
         Missing_btn.setOnAction(event -> onMissing());
         Reports_btn.setOnAction(event -> onReports());
         Funds_btn.setOnAction(event -> onFunds());
+        Waggle_btn.setOnAction(event -> onWaggle());
 
     }
 
@@ -85,5 +87,7 @@ public class MenuController  implements Initializable{
         Models.getInstance().getViewManage().getClientSelectedMenuItem().set("Funds");
     }
 
-
+    public void onWaggle() {
+        Models.getInstance().getViewManage().getClientSelectedMenuItem().set("Waggle");
+    }
 }

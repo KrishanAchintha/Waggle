@@ -63,7 +63,17 @@
 
 
 
+.main_menu Button{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
 
+}
 
-
+.main_menu Button:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+}
 

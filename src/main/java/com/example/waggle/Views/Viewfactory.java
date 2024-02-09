@@ -25,6 +25,7 @@ public class Viewfactory {
     private AnchorPane Reportview;
     private AnchorPane Fundsview;
 
+    private AnchorPane waggle;
 
     private AnchorPane addAnimalFormView;
 
@@ -105,7 +106,6 @@ public class Viewfactory {
         }
         return voluenteersview;
     }
-
     public AnchorPane getAdvertisementsview() {
         if (Advertisementsview == null) {
             try {
@@ -146,7 +146,16 @@ public class Viewfactory {
         }
         return Fundsview;
     }
-
+public AnchorPane getWaggle() {
+        if (waggle == null) {
+            try {
+                waggle = new FXMLLoader(getClass().getResource("/Fxml/About-us.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return waggle;
+    }
 
 
 

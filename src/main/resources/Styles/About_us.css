@@ -1,0 +1,11 @@
+.main {
+    -fx-font: 25px "Roboto Light";
+    -fx-font-weight: bold;
+}
+
+.container {
+    -fx-font: 16px "Times New Roman";
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}

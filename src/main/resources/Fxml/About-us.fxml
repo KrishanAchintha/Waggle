@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../Styles/About_us.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.About_usController">
+   <Label alignment="CENTER" layoutX="369.0" layoutY="48.0" styleClass="main" text="About Waggle" AnchorPane.leftAnchor="369.0" AnchorPane.topAnchor="48.0" />
+   <Text layoutX="127.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container" text="At Waggle, we're on a mission to make a difference in the lives of street pets. Our organization is dedicated to providing support and care for animals in need, especially those facing medical illnesses. We believe that every pet deserves a chance at a happy and healthy life, and we're committed to making that a reality." wrappingWidth="654.1367797851562" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="121.734375" />
+   <Text layoutX="127.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container" text="One of our primary initiatives is to provide comprehensive medical care and rehabilitation for street pets in need. Whether they're injured, sick, or facing other health challenges, we're here to help them recover and thrive. Through our network of dedicated veterinarians and caregivers, we ensure that each animal receives the attention and treatment they deserve." wrappingWidth="654.1367797851562" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="226.734375" />
+   <Text layoutX="127.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container" text="But our support doesn't end there. We understand that pet ownership can sometimes be overwhelming, especially for those with multiple animals. That's why we offer a unique solution for pet owners who find themselves unable to care for their pets due to various reasons. Through Waggle, individuals can find loving homes for their pets or connect with potential buyers who share our commitment to animal welfare." wrappingWidth="654.1367797851562" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="333.734375" />
+   <Text layoutX="127.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container" text="Additionally, our online platform provides a space for pet owners to advertise their pets for sale, ensuring that each animal finds the perfect match. By facilitating these connections, we not only help pets find new homes but also empower individuals to make responsible decisions regarding pet ownership." wrappingWidth="654.1367797851562" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="458.734375" />
+   <Text layoutX="127.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container" text="At Waggle, we're driven by compassion, dedication, and a deep love for animals. Join us in our mission to create a world where every pet is valued, cared for, and cherished" wrappingWidth="654.1367797851562" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="563.734375" />
+   <ImageView fitHeight="73.0" fitWidth="97.0" layoutX="684.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/Login/logingWindow.png" />
+      </image>
+   </ImageView>
+</AnchorPane>
