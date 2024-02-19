@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Animal/AnimalForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AddAnimalFormController">
+   <VBox prefHeight="720.0" prefWidth="880.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane prefHeight="146.0" prefWidth="880.0" styleClass="header_label">
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="43.0" nodeOrientation="LEFT_TO_RIGHT" text="New Animal Registration Form " />
+         <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="768.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../Images/Login/logingWindow.png" />
+            </image>
+         </ImageView>
+      </Pane>
+      <Pane prefHeight="470.0" prefWidth="880.0" styleClass="form">
+         <children>
+            <VBox layoutY="-1.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Place Found" styleClass="form_text_field" />
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Medical Illnesses" styleClass="form_text_field" />
+                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Keeper Name" styleClass="form_text_field" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane prefHeight="110.0" prefWidth="880.0">
+         <children>
+            <Button alignment="CENTER_RIGHT" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Add" />
+            <Button layoutX="24.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Reset" />
+         </children>
+      </Pane>
+   </VBox>
+</AnchorPane>

@@ -17,4 +17,5 @@ module com.example.waggle {
     exports com.example.waggle.Controllers;
     exports com.example.waggle.Models;
     exports com.example.waggle.Controllers.Menu;
+    exports com.example.waggle.Controllers.Menu.Animal;
 }
