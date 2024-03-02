@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-        //this is a cpmment
+        //this is a comment
 
     @Override
     public void start(Stage stage)  {
@@ -14,4 +14,7 @@ public class App extends Application {
     }
 }
 //sddfsfd
-//dfdfdfdfdfdfdf
+
+
+
+// new comment by navindu
