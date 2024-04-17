@@ -15,34 +15,26 @@
       <Pane prefHeight="146.0" prefWidth="880.0" styleClass="header_label">
          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="43.0" nodeOrientation="LEFT_TO_RIGHT" text="New Animal Registration Form " />
          <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="768.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../../../Images/Login/logingWindow.png" />
-            </image>
+            <Image url="@../../../Images/Login/logingWindow.png" />
          </ImageView>
       </Pane>
       <Pane prefHeight="470.0" prefWidth="880.0" styleClass="form">
-         <children>
-            <VBox layoutY="-1.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form">
-               <children>
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Place Found" styleClass="form_text_field" />
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </TextField>
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Medical Illnesses" styleClass="form_text_field" />
-                  <TextField prefHeight="25.0" prefWidth="686.0" promptText="Keeper Name" styleClass="form_text_field" />
-               </children>
-            </VBox>
-         </children>
+         <VBox layoutY="-1.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form">
+            <TextField fx:id="CagNo" prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
+            <TextField fx:id="PlaceFound" prefHeight="25.0" prefWidth="686.0" promptText="Place Found" styleClass="form_text_field" />
+            <TextField fx:id="RegNo" prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="Age" prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
+            <TextField fx:id="Medicalllnesses" prefHeight="25.0" prefWidth="686.0" promptText="Medical Illnesses" styleClass="form_text_field" />
+            <TextField fx:id="KeeperName" prefHeight="25.0" prefWidth="686.0" promptText="Keeper Name" styleClass="form_text_field" />
+         </VBox>
       </Pane>
       <Pane prefHeight="110.0" prefWidth="880.0">
-         <children>
-            <Button alignment="CENTER_RIGHT" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Add" />
-            <Button layoutX="24.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Reset" />
-         </children>
+         <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Add" />
+         <Button fx:id="Resetbtn" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Reset" />
       </Pane>
    </VBox>
 </AnchorPane>

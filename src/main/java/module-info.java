@@ -2,6 +2,7 @@ module com.example.waggle {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires java.net.http;
 
 //    requires org.controlsfx.controls;
 //    requires com.dlsc.formsfx;

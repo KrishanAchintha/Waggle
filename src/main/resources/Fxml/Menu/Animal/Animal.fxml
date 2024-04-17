@@ -34,17 +34,21 @@
             <Insets bottom="10.0" />
          </padding>
          <HBox prefHeight="59.0" prefWidth="430.0" stylesheets="@../../../Styles/MenuBar/Animal/Animal.css">
-            <ImageView fitHeight="12.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="37.0" right="3.0" top="23.0" />
-               </HBox.margin>
-               <Image url="@../../../Images/AnimalPage/search.png" />
-            </ImageView>
             <TextField fx:id="SearchAnimal" prefHeight="34.0" prefWidth="310.0">
                <HBox.margin>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="16.0" />
+                  <Insets bottom="8.0" left="37.0" right="8.0" top="16.0" />
                </HBox.margin>
             </TextField>
+            <Button fx:id="SearchBtn" mnemonicParsing="false" style="-fx-background-color: #E4F9F5;">
+               <graphic>
+                  <ImageView fitHeight="12.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../../Images/AnimalPage/search.png" />
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="16.0" />
+               </HBox.margin>
+            </Button>
          </HBox>
          <HBox prefHeight="220.0" prefWidth="200.0">
             <VBox.margin>
