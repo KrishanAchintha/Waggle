@@ -19,7 +19,6 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-
 import com.google.gson.Gson;
 
 public class LoginController implements Initializable {
@@ -30,10 +29,10 @@ public class LoginController implements Initializable {
     public TextField Username;
     public Button Clear_btn;
 
-    public String extractedUsername;
-    public String extractedPassword;
-    public String ssid;
-    public String url;
+    public static String extractedUsername;
+    public static String extractedPassword;
+    public static String ssid;
+    public static String url;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -64,14 +63,14 @@ public class LoginController implements Initializable {
             Gson gson = new Gson();
             ApiResponse responseData = gson.fromJson(response.body(), ApiResponse.class);
 
-
-
             if(response.statusCode() == 200){
                 // Extract values
                 extractedUsername = responseData.getDb().getUsername();
                 extractedPassword = responseData.getDb().getPassword();
                 ssid = responseData.getSid();
                 url = responseData.getDb().getConnectionUrl();
+
+                DataBaseConnector.getConnection();
 
                 // Store values
                 Stage stage = (Stage) error_lbl.getScene().getWindow();
@@ -80,6 +79,8 @@ public class LoginController implements Initializable {
 
             }else{
                 error_lbl.setText("Login Failed");
+                Username.clear();
+                Password.clear();
             }
 
         } catch (IOException | InterruptedException e) {

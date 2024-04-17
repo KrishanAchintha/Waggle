@@ -1,6 +1,7 @@
 package com.example.waggle.Views;
 
 import com.example.waggle.Controllers.ClientController;
+import com.example.waggle.Controllers.Menu.Volunteer.VolunteerAddFormController;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
@@ -28,6 +29,7 @@ public class Viewfactory {
     private AnchorPane waggle;
 
     private AnchorPane addAnimalFormView;
+    private AnchorPane addVolunteerFormView;
 
 
 
@@ -99,7 +101,7 @@ public class Viewfactory {
     public AnchorPane getVoluenteersview() {
         if (voluenteersview == null) {
             try {
-                voluenteersview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Volunteer.fxml")).load();
+                voluenteersview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Volunteer/Volunteer.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -173,6 +175,19 @@ public AnchorPane getWaggle() {
         return addAnimalFormView;
     }
 
+    public AnchorPane getAddVolunteerFormView() {
+        if (addVolunteerFormView == null) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Menu/Volunteer/AddVolunteerForm.fxml"));
+                addVolunteerFormView = loader.load();
+                VolunteerAddFormController controller = loader.getController();
+                addVolunteerFormView.setUserData(controller);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return addVolunteerFormView;
+    }
 
     public void showLogin(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
