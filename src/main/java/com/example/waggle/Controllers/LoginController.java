@@ -68,15 +68,15 @@ public class LoginController implements Initializable {
         HttpClient httpClient = HttpClient.newHttpClient();
         String API_URL = "http://159.65.12.91/api/user/login";
 
-        Map<Object, Object> data = Map.of(
-                "username", Username.getText(),
-                "password", Password.getText()
-        );
+        // Prepare form data
+        String username = Username.getText();
+        String password = Password.getText();
+        String formData = "username=" + username + "&password=" + password;
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(API_URL))
-                .header("Content-Type", "application/json")
-                .POST(HttpRequest.BodyPublishers.ofString(data.toString()))
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .POST(HttpRequest.BodyPublishers.ofString(formData))
                 .build();
 
         try {
@@ -86,4 +86,5 @@ public class LoginController implements Initializable {
             e.printStackTrace();
         }
     }
+
 }
