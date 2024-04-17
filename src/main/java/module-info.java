@@ -3,6 +3,9 @@ module com.example.waggle {
     requires javafx.fxml;
     requires javafx.web;
     requires java.net.http;
+    requires gson;
+    requires java.sql;
+
 
 //    requires org.controlsfx.controls;
 //    requires com.dlsc.formsfx;
@@ -19,4 +22,5 @@ module com.example.waggle {
     exports com.example.waggle.Models;
     exports com.example.waggle.Controllers.Menu;
     exports com.example.waggle.Controllers.Menu.Animal;
+    opens com.example.waggle.Controllers to gson;
 }

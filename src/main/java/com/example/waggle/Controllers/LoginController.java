@@ -20,6 +20,8 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 
+import com.google.gson.Gson;
+
 public class LoginController implements Initializable {
 
     public Button Login_btn;
@@ -28,41 +30,18 @@ public class LoginController implements Initializable {
     public TextField Username;
     public Button Clear_btn;
 
+    public String extractedUsername;
+    public String extractedPassword;
+    public String ssid;
+    public String url;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         Login_btn.setOnAction(event -> onLogin());
-        // Clear_btn.setOnAction(event -> Clear());
+        Clear_btn.setOnAction(event -> Clear());
     }
 
-    /*
-        private void onLogin() {
-            String username = Username.getText();
-            String password = Password.getText();
-
-            if (username.isEmpty() || password.isEmpty()) {
-                error_lbl.setText("Please fill in all fields !");
-                return;
-            } else if (!username.equals("admin") || !password.equals("admin")) {
-                error_lbl.setText("Invalid username or password !");
-                return;
-            } else {
-
-                Stage stage = (Stage) error_lbl.getScene().getWindow();
-                Models.getInstance().getViewManage().closeStage(stage);
-                Models.getInstance().getViewManage().clientWindow();
-        }
-        }
-
-        private void Clear(){
-            Username.clear();
-            Password.clear();
-            error_lbl.setText("");
-        }
-
-
-
-     */
     public void onLogin() {
 
         HttpClient httpClient = HttpClient.newHttpClient();
@@ -81,10 +60,39 @@ public class LoginController implements Initializable {
 
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            System.out.println(response.body());
+            // Parse JSON response
+            Gson gson = new Gson();
+            ApiResponse responseData = gson.fromJson(response.body(), ApiResponse.class);
+
+
+
+            if(response.statusCode() == 200){
+                // Extract values
+                extractedUsername = responseData.getDb().getUsername();
+                extractedPassword = responseData.getDb().getPassword();
+                ssid = responseData.getSid();
+                url = responseData.getDb().getConnectionUrl();
+
+                // Store values
+                Stage stage = (Stage) error_lbl.getScene().getWindow();
+                Models.getInstance().getViewManage().closeStage(stage);
+                Models.getInstance().getViewManage().clientWindow();
+
+            }else{
+                error_lbl.setText("Login Failed");
+            }
+
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
+
+    private void Clear(){
+        Username.clear();
+        Password.clear();
+        error_lbl.setText("");
+    }
+
+
 
 }
