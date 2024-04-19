@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 
 
 import java.net.URL;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class VolunteerAddFormController implements Initializable{
@@ -33,7 +34,15 @@ public class VolunteerAddFormController implements Initializable{
         String gmail = Gmail.getText();
         String phone = Phone.getText();
 
-        // Add volunteer to the database
+
+        Statement st = com.example.waggle.Controllers.DataBaseConnector.getSt();
+
+        String query = "insert into Volunteer (id_number,Name,address,gmail,phone_num)values('"+idnumber+"','"+name+"','"+address+"','"+gmail+"','"+phone+"')";
+        try {
+            st.executeUpdate(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         reset();
 

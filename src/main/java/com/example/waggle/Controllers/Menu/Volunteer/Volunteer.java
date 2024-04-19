@@ -7,7 +7,7 @@ public class Volunteer {
     private String name;
     private String phone;
 
-    public Volunteer(String address, String gmail, String idnumber, String name, String phone) {
+    public Volunteer(String idnumber, String name, String address, String gmail, String phone) {
         this.address = address;
         this.gmail = gmail;
         this.idnumber = idnumber;
