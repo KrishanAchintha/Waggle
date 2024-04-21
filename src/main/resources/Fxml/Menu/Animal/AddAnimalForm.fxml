@@ -7,34 +7,27 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Animal/AnimalForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AddAnimalFormController">
-   <VBox prefHeight="720.0" prefWidth="880.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <Pane prefHeight="146.0" prefWidth="880.0" styleClass="header_label">
-         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="43.0" nodeOrientation="LEFT_TO_RIGHT" text="New Animal Registration Form " />
-         <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="768.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../../Images/Login/logingWindow.png" />
-         </ImageView>
-      </Pane>
-      <Pane prefHeight="470.0" prefWidth="880.0" styleClass="form">
-         <VBox layoutY="-1.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form">
-            <TextField fx:id="CagNo" prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
-            <TextField fx:id="PlaceFound" prefHeight="25.0" prefWidth="686.0" promptText="Place Found" styleClass="form_text_field" />
-            <TextField fx:id="RegNo" prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </TextField>
-            <TextField fx:id="Age" prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
-            <TextField fx:id="Medicalllnesses" prefHeight="25.0" prefWidth="686.0" promptText="Medical Illnesses" styleClass="form_text_field" />
-            <TextField fx:id="KeeperName" prefHeight="25.0" prefWidth="686.0" promptText="Keeper Name" styleClass="form_text_field" />
-         </VBox>
-      </Pane>
-      <Pane prefHeight="110.0" prefWidth="880.0">
-         <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Add" />
-         <Button fx:id="Resetbtn" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Reset" />
-      </Pane>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="header_label" text="New Animal Registration Form " AnchorPane.leftAnchor="99.0" AnchorPane.topAnchor="37.0" />
+   <VBox layoutY="124.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="124.0">
+      <TextField fx:id="Animal_id" prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="Cage_no" prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
+      <TextField fx:id="Age" prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
+      <TextField fx:id="State" prefHeight="25.0" prefWidth="686.0" promptText="State" styleClass="form_text_field" />
+      <TextField fx:id="Description" layoutX="30.0" layoutY="306.0" prefHeight="25.0" prefWidth="686.0" promptText="Description" styleClass="form_text_field" />
+      <TextField fx:id="Meal_plan" prefHeight="25.0" prefWidth="686.0" promptText="Meal Plan" styleClass="form_text_field" />
+      <TextField fx:id="Health_statues" prefHeight="25.0" prefWidth="686.0" promptText="Health statues" styleClass="form_text_field" />
+      <TextField fx:id="Keeper_name" prefHeight="25.0" prefWidth="686.0" promptText="Keeper (Only need for keeping animals)" styleClass="form_text_field" />
    </VBox>
+   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="771.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.bottomAnchor="55.4" AnchorPane.rightAnchor="61.8" />
+   <Button fx:id="Resetbtn" layoutX="70.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.bottomAnchor="55.4" AnchorPane.leftAnchor="70.0" />
+   <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="746.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="33.0">
+      <Image url="@../../../Images/Login/logingWindow.png" />
+   </ImageView>
 </AnchorPane>

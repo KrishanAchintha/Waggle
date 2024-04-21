@@ -7,16 +7,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Volunteer/VolunteerForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Volunteer.VolunteerAddFormController">
-   <Pane prefHeight="146.0" prefWidth="880.0" styleClass="header_label" AnchorPane.bottomAnchor="573.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="44.0" nodeOrientation="LEFT_TO_RIGHT" text="New Volunteer Registration Form " />
-      <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="768.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../Images/Login/logingWindow.png" />
-      </ImageView>
-   </Pane>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="54.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="header_label" text="New Volunteer Registration Form " AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="54.0" />
    <VBox layoutY="165.0" prefHeight="417.0" prefWidth="880.0" styleClass="vbox_form" AnchorPane.bottomAnchor="137.39999999999998" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="164.79999999999995">
       <TextField fx:id="Name" prefHeight="25.0" prefWidth="686.0" promptText="Name" styleClass="form_text_field" />
       <TextField fx:id="Idnumber" prefHeight="25.0" prefWidth="686.0" promptText="Nation ID Number" styleClass="form_text_field" />
@@ -28,8 +22,9 @@
       <TextField fx:id="Gmail" prefHeight="25.0" prefWidth="686.0" promptText="Gmail" styleClass="form_text_field" />
       <TextField fx:id="Phone" prefHeight="25.0" prefWidth="686.0" promptText="Phone number" styleClass="form_text_field" />
    </VBox>
-   <Pane layoutY="595.0" prefHeight="110.0" prefWidth="880.0" AnchorPane.bottomAnchor="14.600000000000023" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-      <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Add" />
-      <Button fx:id="Resetbtn" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" styleClass="form_button" text="Reset" />
-   </Pane>
+   <Button fx:id="Resetbtn" layoutX="39.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.bottomAnchor="55.20000000000007" AnchorPane.leftAnchor="39.0" />
+   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="792.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.bottomAnchor="55.4" AnchorPane.rightAnchor="40.8" />
+   <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="743.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="50.0">
+      <Image url="@../../../Images/Login/logingWindow.png" />
+   </ImageView>
 </AnchorPane>

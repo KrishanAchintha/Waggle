@@ -17,10 +17,19 @@ public class DataBaseConnector {
         DataBaseConnector.st = st;
     }
 
+    public static Connection getConn() {
+        return conn;
+    }
+
+    public static void setConn(Connection conn) {
+        DataBaseConnector.conn = conn;
+    }
+
     public static void getConnection()   {
 
         try {
             conn = DriverManager.getConnection(LoginController.url, LoginController.extractedUsername, LoginController.extractedPassword);
+            setConn(conn);
             if (conn != null) {
                 System.out.println("Connected to the database");
             }

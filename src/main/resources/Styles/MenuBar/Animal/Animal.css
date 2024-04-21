@@ -8,18 +8,14 @@
 }
 
 .search{
-    -fx-border-color: #ffffff;
+    -fx-border-color: #000000;
     -fx-border-width: 0px;
-    -fx-background-color:#E4F9F5;
+    -fx-background-color:#FFFFFF;
     -fx-prompt-text-fill: #000000;
 
 }
 
-.Pane_selected Pane:hover {
-    -fx-background-color: #000000;
-    -fx-effect: hand;
-    -fx-background-radius: 20px;
-}
+
 
 .Animal_numbers{
     -fx-font-size: 16px;
@@ -41,13 +37,6 @@
 }
 
 
-.Animal_keeporadd {
-    -fx-background-color: #BFF2E8;
-    -fx-background-radius: 6px;
-    -fx-padding: 0 8 0 8;
-    -fx-font-size: 16px;
-    -fx-font-weight: bold;
-}
 
 .Animal_CageNo{
     -fx-font-size: 14px;

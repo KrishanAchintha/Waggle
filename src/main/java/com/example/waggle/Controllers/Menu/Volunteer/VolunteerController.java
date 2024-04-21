@@ -44,7 +44,8 @@ public class VolunteerController implements Initializable {
         // Fetch data from the database
         try {
             Statement st = com.example.waggle.Controllers.DataBaseConnector.getSt();
-            ResultSet rs = st.executeQuery("SELECT * FROM Volunteer");
+            String sql = "SELECT * FROM Volunteer";
+            ResultSet rs = st.executeQuery(sql);
 
             // For each row in the ResultSet, create a new Volunteer object and add it to the TableView
             while (rs.next()) {

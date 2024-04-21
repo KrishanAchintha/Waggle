@@ -5,9 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.MenuController">
@@ -95,32 +93,7 @@
                </ImageView>
             </graphic>
          </Button>
-         <Line endX="72.89289093017578" endY="0.5929054617881775" startX="-100.0" />
       </VBox>
-      <VBox layoutY="665.0" prefHeight="54.0" prefWidth="200.0" styleClass="alt_menu" stylesheets="@../Styles/Menu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <HBox prefHeight="72.0" prefWidth="200.0" spacing="20.0" styleClass="main_menu_container" stylesheets="@../Styles/Menu.css">
-            <Button fx:id="Notification_btn" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="alt_menu">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <Image url="@../Images/Menu/notification.png" />
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="Setting_btn" layoutX="24.0" layoutY="33.0" mnemonicParsing="false" styleClass="alt_menu">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <Image url="@../Images/Menu/setting.png" />
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="Message_btn" layoutX="36.0" layoutY="33.0" mnemonicParsing="false" styleClass="alt_menu">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <Image url="@../Images/Menu/chat.png" />
-                  </ImageView>
-               </graphic>
-            </Button>
-         </HBox>
-      </VBox>
+      <VBox layoutY="665.0" prefHeight="54.0" prefWidth="200.0" styleClass="alt_menu" stylesheets="@../Styles/Menu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </AnchorPane>
 </VBox>
