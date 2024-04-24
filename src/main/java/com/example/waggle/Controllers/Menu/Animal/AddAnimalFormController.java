@@ -60,6 +60,8 @@ public class AddAnimalFormController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        reset();
     }
     private void reset() {
         Animal_id.clear();

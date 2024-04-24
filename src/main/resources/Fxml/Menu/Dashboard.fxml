@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.waggle.Controllers.Menu.DashboardController">
-   <Label layoutX="311.0" layoutY="187.0" prefHeight="117.0" prefWidth="299.0" text="Dashboard">
-      <font>
-         <Font size="61.0"/>
-      </font>
-   </Label>
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="main" stylesheets="@../../Styles/MenuBar/Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.DashboardController">
+   <children>
+      <Pane layoutX="607.0" layoutY="15.2" prefHeight="200.0" prefWidth="274.0" styleClass="main_pane" AnchorPane.leftAnchor="313.6" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="Total_count" layoutX="150.0" layoutY="101.0" styleClass="text_normal2" text="L" />
+            <Label fx:id="Advertisement_count" layoutX="187.0" layoutY="73.0" styleClass="text_normal2" text="L" />
+         </children></Pane>
+      <Pane layoutX="611.8000000000001" layoutY="15.2" prefHeight="90.0" prefWidth="250.0" styleClass="main_pane" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="15.0" />
+      <Pane layoutX="16.8" layoutY="15.2" prefHeight="200.0" prefWidth="274.0" styleClass="main_pane" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="Total_amount" layoutX="54.0" layoutY="78.0" styleClass="text_total" text="Label" />
+            <Label layoutX="27.0" layoutY="14.0" styleClass="text_topic" text="Fund" />
+         </children></Pane>
+      <Label layoutX="344.0" layoutY="29.0" styleClass="text_topic" text="Animal " AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="453.6" AnchorPane.topAnchor="29.0" />
+      <Label layoutX="344.0" layoutY="63.0" prefHeight="18.0" prefWidth="96.0" styleClass="text_normal" text="Total amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="63.0" />
+      <Label layoutX="344.0" layoutY="115.0" styleClass="text_normal" text="Keeping  amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="427.2" AnchorPane.topAnchor="115.0" />
+      <Label layoutX="344.0" layoutY="87.0" styleClass="text_normal" text="Advertisement amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="391.2" AnchorPane.topAnchor="87.0" />
+      <Label fx:id="Keeping_count" layoutX="440.8" layoutY="63.8" styleClass="text_normal2" text="L" AnchorPane.leftAnchor="440.8" AnchorPane.rightAnchor="430.4" AnchorPane.topAnchor="63.8" />
+      <ImageView fitHeight="104.0" fitWidth="170.0" layoutX="693.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="33.59519958496094" AnchorPane.topAnchor="602.0">
+         <image>
+            <Image url="@../../Images/Login/logingWindow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="636.0" layoutY="29.0" styleClass="text_topic" text="Volunteer " AnchorPane.rightAnchor="130.39999999999998" AnchorPane.topAnchor="29.0" />
+      <Label layoutX="637.0" layoutY="63.0" styleClass="text_normal" text="Current Volunteer amount :" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="63.0" />
+      <Label fx:id="Volunteer_count" layoutX="809.6" layoutY="65.0" prefHeight="18.0" prefWidth="37.0" styleClass="text_normal2" text="L" AnchorPane.rightAnchor="32.799999999999955" AnchorPane.topAnchor="65.0" />
+      <Pane layoutX="611.0" layoutY="127.0" prefHeight="90.0" prefWidth="250.0" styleClass="main_pane" AnchorPane.rightAnchor="18.599999999999994" AnchorPane.topAnchor="127.0" />
+   </children>
 </AnchorPane>

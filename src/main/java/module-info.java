@@ -24,4 +24,5 @@ module com.example.waggle {
     exports com.example.waggle.Controllers.Menu.Animal;
     opens com.example.waggle.Controllers to gson;
     exports com.example.waggle.Controllers.Menu.Volunteer;
+    exports com.example.waggle.Controllers.Menu.Fund;
 }
