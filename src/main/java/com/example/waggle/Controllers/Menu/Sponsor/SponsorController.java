@@ -1,4 +1,4 @@
-package com.example.waggle.Controllers.Menu;
+package com.example.waggle.Controllers.Menu.Sponsor;
 
 import javafx.fxml.Initializable;
 

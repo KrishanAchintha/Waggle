@@ -41,6 +41,37 @@ public class LoginController implements Initializable {
         Clear_btn.setOnAction(event -> Clear());
     }
 
+    private void onLogin(){
+
+            String username = Username.getText();
+            String password = Password.getText();
+
+            if (username.isEmpty() || password.isEmpty()) {
+                error_lbl.setText("Please fill in all fields !");
+                return;
+            } else if (!username.equals("admin") || !password.equals("admin")) {
+                error_lbl.setText("Invalid username or password !");
+                return;
+            } else {
+
+                url = "jdbc:sql6.freesqldatabase.com:3306 ";
+                extractedUsername = "sql6702245";
+                extractedPassword ="5EjAx8cGNr";
+
+
+
+                Stage stage = (Stage) error_lbl.getScene().getWindow();
+                Models.getInstance().getViewManage().closeStage(stage);
+                Models.getInstance().getViewManage().clientWindow();
+            }
+
+    }
+
+
+
+
+
+    /*
     public void onLogin() {
 
         HttpClient httpClient = HttpClient.newHttpClient();
@@ -87,7 +118,7 @@ public class LoginController implements Initializable {
             e.printStackTrace();
         }
     }
-
+*/
     private void Clear(){
         Username.clear();
         Password.clear();

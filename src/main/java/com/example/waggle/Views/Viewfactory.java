@@ -51,7 +51,7 @@ public class Viewfactory {
     public AnchorPane getSponsorview() {
         if (sponsorview == null) {
             try {
-                sponsorview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Sponsor.fxml")).load();
+                sponsorview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Sponsor/Sponsor.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
