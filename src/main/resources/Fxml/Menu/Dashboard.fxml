@@ -28,7 +28,7 @@
       <Label layoutX="344.0" layoutY="115.0" styleClass="text_normal" text="Keeping  amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="427.2" AnchorPane.topAnchor="115.0" />
       <Label layoutX="344.0" layoutY="87.0" styleClass="text_normal" text="Advertisement amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="391.2" AnchorPane.topAnchor="87.0" />
       <Label fx:id="Keeping_count" layoutX="440.8" layoutY="63.8" styleClass="text_normal2" text="L" AnchorPane.leftAnchor="440.8" AnchorPane.rightAnchor="430.4" AnchorPane.topAnchor="63.8" />
-      <ImageView fitHeight="104.0" fitWidth="170.0" layoutX="693.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="33.59519958496094" AnchorPane.topAnchor="602.0">
+      <ImageView fitHeight="104.0" fitWidth="170.0" layoutX="708.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="18.595199584960938" AnchorPane.topAnchor="602.0">
          <image>
             <Image url="@../../Images/Login/logingWindow.png" />
          </image>

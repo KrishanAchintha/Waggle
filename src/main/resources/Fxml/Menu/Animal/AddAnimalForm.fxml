@@ -7,27 +7,36 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Animal/AnimalForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AddAnimalFormController">
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Animal/AnimalForm.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AddAnimalFormController">
    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="header_label" text="New Animal Registration Form " AnchorPane.leftAnchor="99.0" AnchorPane.topAnchor="37.0" />
-   <VBox layoutY="124.0" prefHeight="470.0" prefWidth="880.0" styleClass="vbox_form" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="124.0">
-      <TextField fx:id="Animal_id" prefHeight="25.0" prefWidth="686.0" promptText="Registration Number (ex:- DOG001)" styleClass="form_text_field">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </TextField>
-      <TextField fx:id="Cage_no" prefHeight="25.0" prefWidth="686.0" promptText="Cage Number (ex:- CAGE001)" styleClass="form_text_field" />
-      <TextField fx:id="Age" prefHeight="25.0" prefWidth="686.0" promptText="Age" styleClass="form_text_field" />
-      <TextField fx:id="State" prefHeight="25.0" prefWidth="686.0" promptText="State" styleClass="form_text_field" />
-      <TextField fx:id="Description" layoutX="30.0" layoutY="306.0" prefHeight="25.0" prefWidth="686.0" promptText="Description" styleClass="form_text_field" />
-      <TextField fx:id="Meal_plan" prefHeight="25.0" prefWidth="686.0" promptText="Meal Plan" styleClass="form_text_field" />
-      <TextField fx:id="Health_statues" prefHeight="25.0" prefWidth="686.0" promptText="Health statues" styleClass="form_text_field" />
-      <TextField fx:id="Keeper_name" prefHeight="25.0" prefWidth="686.0" promptText="Keeper (Only need for keeping animals)" styleClass="form_text_field" />
-   </VBox>
-   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="771.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.bottomAnchor="55.4" AnchorPane.rightAnchor="61.8" />
-   <Button fx:id="Resetbtn" layoutX="70.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.bottomAnchor="55.4" AnchorPane.leftAnchor="70.0" />
+   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="766.0" layoutY="604.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.bottomAnchor="90.39999999999998" AnchorPane.rightAnchor="66.79999999999995" />
+   <Button fx:id="Resetbtn" layoutX="66.0" layoutY="604.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.bottomAnchor="90.39999999999998" AnchorPane.leftAnchor="66.0" />
    <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="746.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="33.0">
       <Image url="@../../../Images/Login/logingWindow.png" />
    </ImageView>
+   <Button fx:id="image_selector" layoutX="670.0" layoutY="541.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="141.0" styleClass="form_button" text="Choose Image" AnchorPane.rightAnchor="68.39999999999998" />
+   <TextField fx:id="Animal_id" layoutX="206.0" layoutY="134.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <TextField fx:id="Cage_no" layoutX="206.0" layoutY="177.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="Age" layoutX="206.0" layoutY="222.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="type" layoutX="206.0" layoutY="271.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="Description" layoutX="206.0" layoutY="409.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="Meal_plan" layoutX="206.0" layoutY="452.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="Health_statues" layoutX="206.0" layoutY="362.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <TextField fx:id="Keeper_name" layoutX="206.0" layoutY="496.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <Label layoutX="80.0" layoutY="141.0" text="Animal ID" />
+   <Label layoutX="80.0" layoutY="185.0" text="Cage No" />
+   <Label layoutX="81.0" layoutY="230.0" text="Age" />
+   <Label layoutX="80.0" layoutY="278.0" text="Animal Type" />
+   <Label layoutX="80.0" layoutY="323.0" prefHeight="18.0" prefWidth="46.0" text="State" />
+   <TextField fx:id="State" layoutX="206.0" layoutY="317.0" prefHeight="30.0" prefWidth="608.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="67.60000000000002" />
+   <Label layoutX="83.0" layoutY="369.0" prefHeight="18.0" prefWidth="92.0" text="Helth Condition" />
+   <Label layoutX="83.0" layoutY="416.0" prefHeight="18.0" prefWidth="66.0" text="Description" />
+   <Label layoutX="83.0" layoutY="459.0" prefHeight="18.0" prefWidth="66.0" text="Meal Plan" />
+   <Label layoutX="83.0" layoutY="502.0" prefHeight="18.0" prefWidth="112.0" text="Keepr ID (optional)" />
+   <TextField fx:id="selectimage" layoutX="206.0" layoutY="541.0" prefHeight="26.0" prefWidth="455.0" styleClass="form_text_field" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="218.80000000000007" />
 </AnchorPane>

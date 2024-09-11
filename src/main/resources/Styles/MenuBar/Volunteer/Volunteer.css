@@ -29,47 +29,6 @@ Textfield {
     -fx-prompt-text-fill: black;
 
 }
-.table-view {
-    -fx-background-color: #f5f5f5; /* Background color */
-    -fx-font-family: Roboto; /* Font family */
-}
 
-.table-view .column-header-background {
-    -fx-font-family: Roboto;
-    -fx-background-color: #333; /* Header background color */
-}
 
-.table-view .column-header {
-    -fx-text-fill: white; /* Header text color */
-    -fx-font-weight: bold; /* Header text weight */
-}
 
-.table-row-cell {
-    -fx-background-color: #fff; /* Row background color */
-}
-
-.table-row-cell:odd {
-    -fx-background-color: #f2f2f2; /* Alternate row background color */
-}
-
-.table-cell {
-
-    -fx-text-fill: #333; /* Cell text color */
-    -fx-alignment: center; /* Cell text alignment */
-    -fx-font-size: 14px; /* Cell text size */
-    -fx-font-family: Arial, sans-serif; /* Cell text font family */
-}
-
-.table-cell:empty {
-    -fx-background-color: transparent; /* Empty cell background */
-}
-
-.table-row-cell:selected {
-    -fx-background-color: rgba(0, 123, 255, 0.55); /* Selected row background color */
-    -fx-text-fill: white; /* Selected row text color */
-}
-
-.table-cell:selected {
-    -fx-background-color: #007bff; /* Selected cell background color */
-    -fx-text-fill: white; /* Selected cell text color */
-}

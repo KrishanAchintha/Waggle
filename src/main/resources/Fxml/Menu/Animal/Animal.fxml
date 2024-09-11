@@ -8,17 +8,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../Styles/MenuBar/Animal/Animal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AnimalController">
+<AnchorPane prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../Styles/MenuBar/Animal/Animal.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Animal.AnimalController">
    <Pane layoutX="20.8" layoutY="25.0" prefHeight="661.0" prefWidth="418.0" style="-fx-background-radius: 20;" styleClass="left_main" AnchorPane.bottomAnchor="34.200000000000045" AnchorPane.leftAnchor="20.8" AnchorPane.topAnchor="25.0" />
    <TextField fx:id="Search" layoutX="85.0" layoutY="43.0" prefHeight="26.0" prefWidth="195.0" promptText="Pet ID" styleClass="search" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="43.0" />
    <Button fx:id="Search_btn" layoutX="291.0" layoutY="44.0" mnemonicParsing="false" styleClass="Button" text="Search" AnchorPane.leftAnchor="291.0" AnchorPane.topAnchor="44.0" />
-   <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="115.0">
+   <ImageView fx:id="image_view1" fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="115.0">
       <Image url="@../../../Images/AnimalPage/img.png" />
    </ImageView>
-   <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="305.0" pickOnBounds="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="305.0">
+   <ImageView fx:id="image_view2" fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="305.0" pickOnBounds="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="305.0">
       <Image url="@../../../Images/AnimalPage/cat.jpg" />
    </ImageView>
-   <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="495.4" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="495.4">
+   <ImageView fx:id="image_view3" fitHeight="120.0" fitWidth="120.0" layoutX="56.0" layoutY="495.4" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="495.4">
       <Image url="@../../../Images/AnimalPage/img.png" />
    </ImageView>
    <Label fx:id="Animal_id1" layoutX="208.0" layoutY="115.0" styleClass="Animal_numbers" text="ANA1001" AnchorPane.leftAnchor="208.0" AnchorPane.topAnchor="115.0" />
@@ -30,7 +30,7 @@
    <Button fx:id="Details_btn1" layoutX="347.0" layoutY="231.0" mnemonicParsing="false" styleClass="Button" text="Details" AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="231.0" />
    <Button fx:id="Details_btn2" layoutX="347.2" layoutY="412.2" mnemonicParsing="false" styleClass="Button" text="Details" AnchorPane.leftAnchor="347.2" AnchorPane.topAnchor="412.2" />
    <Button fx:id="Details_btn3" layoutX="348.0" layoutY="611.4" mnemonicParsing="false" styleClass="Button" text="Details" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="611.4" />
-   <Label fx:id="Cage_no1" layoutX="343.2" layoutY="118.0" prefHeight="20.0" prefWidth="72.0" styleClass="Animal_CageNo" text="CAG10001" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="118.0" />
+   <Label fx:id="Cage_no1" layoutX="343.2" layoutY="118.0" prefHeight="26.0" prefWidth="74.0" styleClass="Animal_CageNo" text="CAG1001" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="118.0" />
    <Label fx:id="Cage_no2" layoutX="339.2" layoutY="308.0" prefHeight="20.0" prefWidth="72.0" styleClass="Animal_CageNo" text="CAG002" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="308.0" />
    <Label fx:id="Cage_no3" layoutX="339.2" layoutY="498.4" prefHeight="20.0" prefWidth="72.0" styleClass="Animal_CageNo" text="CAG003" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="498.0" />
    <Button fx:id="AddAnimal" layoutX="471.0" layoutY="30.0" maxHeight="61.0" maxWidth="61.0" minHeight="49.0" minWidth="53.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="53.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF; -fx-cursor: hand;" styleClass="Button" AnchorPane.leftAnchor="471.19999999999993" AnchorPane.topAnchor="30.0">
@@ -40,23 +40,15 @@
          </ImageView>
       </graphic>
    </Button>
-   <Button fx:id="store" layoutX="540.0" layoutY="31.0" maxHeight="61.0" maxWidth="61.0" minHeight="50.0" minWidth="53.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF; -fx-cursor: hand;" styleClass="Button" AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="31.0">
-      <graphic>
-         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../../../Images/AnimalPage/img_1.png" />
-            </image>
-         </ImageView>
-      </graphic>
-   </Button>
+   <Button fx:id="store" layoutX="540.0" layoutY="31.0" maxHeight="61.0" maxWidth="61.0" minHeight="50.0" minWidth="53.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="53.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF; -fx-cursor: hand;" styleClass="Button" AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="31.0" />
    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="746.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="33.0">
       <image>
          <Image url="@../../../Images/AnimalPage/businessman.png" />
       </image>
    </ImageView>
-   <Label fx:id="PersonNameInAnimal" layoutX="621.0" layoutY="34.0" prefHeight="22.0" prefWidth="106.0" text="Susantha Gamage" AnchorPane.rightAnchor="72.80000000000004" AnchorPane.topAnchor="34.0" />
-   <Label fx:id="PersonRoleInAniimal" layoutX="621.0" layoutY="55.0" prefHeight="18.0" prefWidth="68.0" text="owner" textFill="#11999e" AnchorPane.rightAnchor="72.79999999999993" AnchorPane.topAnchor="55.0" />
-   <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="471.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="115.0">
+   <Label fx:id="PersonNameInAnimal" layoutX="621.0" layoutY="34.0" prefHeight="26.0" prefWidth="150.0" text="Susantha Gamage" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="34.0" />
+   <Label fx:id="PersonRoleInAniimal" layoutX="621.0" layoutY="55.0" prefHeight="26.0" prefWidth="68.0" text="owner" textFill="#11999e" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="55.0" />
+   <ImageView fx:id="image_main" fitHeight="150.0" fitWidth="150.0" layoutX="471.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="115.0">
       <image>
          <Image url="@../../../Images/AnimalPage/img.png" />
       </image>
@@ -67,10 +59,10 @@
    <Label layoutX="651.2" layoutY="125.4" styleClass="Animal_numbers" text=" ID  :" AnchorPane.leftAnchor="651.2" AnchorPane.topAnchor="125.4" />
    <Label fx:id="Age" layoutX="694.0" layoutY="199.0" prefHeight="20.0" prefWidth="87.0" styleClass="Animal_CageNo" text="20 Months" AnchorPane.leftAnchor="694.0" AnchorPane.topAnchor="199.0" />
    <Label layoutX="647.4" layoutY="196.0" styleClass="Animal_numbers" text="Age :" AnchorPane.leftAnchor="647.4" AnchorPane.topAnchor="196.0" />
-   <Label layoutX="639.0" layoutY="234.0" styleClass="Animal_numbers" text="State :" AnchorPane.leftAnchor="639.0" AnchorPane.topAnchor="234.0" />
-   <Label fx:id="State" layoutX="705.0" layoutY="237.0" prefHeight="20.0" prefWidth="66.0" styleClass="Animal_CageNo" text="Keeping" />
-   <Label fx:id="Description" layoutX="471.0" layoutY="312.0" prefHeight="68.0" prefWidth="305.0" styleClass="Animal_description" text="our expertise to drive business growth and enhance  our expertise to drive business growth and enhance organizational. organizational." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="23.399999999999977" AnchorPane.topAnchor="312.0" />
-   <Label layoutX="471.0" layoutY="288.0" styleClass="Animal_numbers" text="Description" AnchorPane.leftAnchor="471.0" AnchorPane.topAnchor="288.0" />
+   <Label layoutX="472.0" layoutY="275.8" styleClass="Animal_numbers" text="State :" AnchorPane.leftAnchor="472.0" AnchorPane.topAnchor="275.8" />
+   <Label fx:id="State" layoutX="536.0" layoutY="278.0" prefHeight="20.0" prefWidth="66.0" styleClass="Animal_CageNo" text="Keeping" />
+   <Label fx:id="Description" layoutX="470.0" layoutY="321.0" prefHeight="68.0" prefWidth="305.0" styleClass="Animal_description" text="our expertise to drive business growth and enhance  our expertise to drive business growth and enhance organizational. organizational." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="24.399999999999977" AnchorPane.topAnchor="321.0" />
+   <Label layoutX="471.0" layoutY="305.0" styleClass="Animal_numbers" text="Description" AnchorPane.leftAnchor="471.0" AnchorPane.topAnchor="305.0" />
    <Label fx:id="Meal_plan" layoutX="471.0" layoutY="419.0" prefHeight="68.0" prefWidth="306.0" styleClass="Animal_description" text="our expertise to drive business growth and enhance  our expertise to drive business growth and enhance organizational. organizational." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="419.0" />
    <Label layoutX="471.0" layoutY="393.0" styleClass="Animal_numbers" text="Meal Plan" AnchorPane.leftAnchor="471.0" AnchorPane.topAnchor="393.0" />
    <Label fx:id="Health_statues" layoutX="471.0" layoutY="522.0" prefHeight="68.0" prefWidth="306.0" styleClass="Animal_description" text="our expertise to drive business growth and enhance  our expertise to drive business growth and enhance organizational. organizational." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="23.399999999999977" AnchorPane.topAnchor="522.0" />
@@ -78,4 +70,6 @@
    <Label fx:id="Keeper_ID" layoutX="720.0" layoutY="594.0" prefHeight="20.0" prefWidth="68.0" styleClass="Animal_CageNo" text="KEEP001" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="92.79999999999995" AnchorPane.topAnchor="594.0" />
    <Label layoutX="470.0" layoutY="591.0" prefHeight="26.0" prefWidth="247.0" styleClass="Animal_numbers" text="Keeper ID (Only for Keeping ) :" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="163.5999999999999" AnchorPane.topAnchor="591.0" />
    <Button fx:id="Release_btn" layoutX="466.0" layoutY="637.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" styleClass="Button" text="Release" AnchorPane.bottomAnchor="56.60000000000002" AnchorPane.leftAnchor="466.0" />
+   <Label layoutX="635.0" layoutY="231.0" styleClass="Animal_numbers" text=" Type :" />
+   <Label fx:id="Type" layoutX="695.0" layoutY="230.0" prefHeight="26.0" prefWidth="74.0" styleClass="Animal_numbers" text="Cat" />
 </AnchorPane>

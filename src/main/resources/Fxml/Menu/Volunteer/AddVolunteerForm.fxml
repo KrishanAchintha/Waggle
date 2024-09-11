@@ -7,24 +7,26 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Volunteer/VolunteerForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Volunteer.VolunteerAddFormController">
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../../Styles/MenuBar/Volunteer/VolunteerForm.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Volunteer.VolunteerAddFormController">
    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="54.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="header_label" text="New Volunteer Registration Form " AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="54.0" />
-   <VBox layoutY="165.0" prefHeight="417.0" prefWidth="880.0" styleClass="vbox_form" AnchorPane.bottomAnchor="137.39999999999998" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="164.79999999999995">
-      <TextField fx:id="Name" prefHeight="25.0" prefWidth="686.0" promptText="Name" styleClass="form_text_field" />
-      <TextField fx:id="Idnumber" prefHeight="25.0" prefWidth="686.0" promptText="Nation ID Number" styleClass="form_text_field" />
-      <TextField fx:id="Address" prefHeight="25.0" prefWidth="686.0" promptText="Address" styleClass="form_text_field">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </TextField>
-      <TextField fx:id="Gmail" prefHeight="25.0" prefWidth="686.0" promptText="Gmail" styleClass="form_text_field" />
-      <TextField fx:id="Phone" prefHeight="25.0" prefWidth="686.0" promptText="Phone number" styleClass="form_text_field" />
-   </VBox>
-   <Button fx:id="Resetbtn" layoutX="39.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.bottomAnchor="55.20000000000007" AnchorPane.leftAnchor="39.0" />
-   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="792.0" layoutY="639.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.bottomAnchor="55.4" AnchorPane.rightAnchor="40.8" />
+   <Button fx:id="Resetbtn" layoutX="95.0" layoutY="524.0" mnemonicParsing="false" styleClass="form_button" text="Reset" AnchorPane.leftAnchor="95.0" />
+   <Button fx:id="Addbtn" alignment="CENTER_RIGHT" layoutX="769.0" layoutY="524.0" mnemonicParsing="false" styleClass="form_button" text="Add" AnchorPane.rightAnchor="63.799999999999955" />
    <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="743.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="50.0">
       <Image url="@../../../Images/Login/logingWindow.png" />
    </ImageView>
+   <TextField fx:id="Name" layoutX="224.0" layoutY="242.0" prefHeight="30.0" prefWidth="592.0" styleClass="form_text_field" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="64.0" />
+   <TextField fx:id="Idnumber" layoutX="224.0" layoutY="331.0" prefHeight="30.0" prefWidth="592.0" styleClass="form_text_field" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="64.0" />
+   <TextField fx:id="Address" layoutX="224.0" layoutY="285.0" prefHeight="30.0" prefWidth="592.0" styleClass="form_text_field" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="64.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <TextField fx:id="Gmail" layoutX="224.0" layoutY="374.0" prefHeight="30.0" prefWidth="592.0" styleClass="form_text_field" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="64.0" />
+   <TextField fx:id="Phone" layoutX="225.0" layoutY="423.0" prefHeight="30.0" prefWidth="592.0" styleClass="form_text_field" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="64.0" />
+   <Label layoutX="100.0" layoutY="248.0" text="Name" />
+   <Label layoutX="101.0" layoutY="291.0" text="Address" />
+   <Label layoutX="101.0" layoutY="337.0" text="Nation ID Number" />
+   <Label layoutX="100.0" layoutY="380.0" text="Gmail" />
+   <Label layoutX="101.0" layoutY="430.0" text="Phone number" />
 </AnchorPane>

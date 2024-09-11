@@ -7,8 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #ffffff;" stylesheets="@../../../Styles/MenuBar/Volunteer/Volunteer.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Volunteer.VolunteerController">
-   <TableView fx:id="volunteerTable" layoutY="50.4" prefHeight="550.0" prefWidth="880.0" styleClass="table" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
+<AnchorPane prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #ffffff;" stylesheets="@../../../Styles/MenuBar/Volunteer/Volunteer.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Volunteer.VolunteerController">
+   <TableView fx:id="volunteerTable" layoutY="50.4" prefHeight="550.0" prefWidth="880.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
      <columns>
          <TableColumn fx:id="Idnumber" prefWidth="75.20001220703125" text="ID" />
        <TableColumn fx:id="Name" prefWidth="152.79998779296875" text="Name" />

@@ -27,4 +27,5 @@ module com.example.waggle {
     exports com.example.waggle.Controllers.Menu.Fund;
     exports com.example.waggle.Controllers.Menu.Sponsor;
     exports com.example.waggle.Controllers.Menu.Keeping;
+    exports com.example.waggle.Controllers.Menu.Alms;
 }

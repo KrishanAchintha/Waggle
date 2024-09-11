@@ -1,10 +1,12 @@
 package com.example.waggle.Controllers.Menu.Fund;
 
+import com.example.waggle.Controllers.DataBaseConnector;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ResourceBundle;
@@ -44,6 +46,7 @@ public class FundsController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Connection con = DataBaseConnector.getConn();
         Name.setCellValueFactory(new PropertyValueFactory<>("name"));
         Address.setCellValueFactory(new PropertyValueFactory<>("address"));
         Amount.setCellValueFactory(new PropertyValueFactory<>("amount"));
