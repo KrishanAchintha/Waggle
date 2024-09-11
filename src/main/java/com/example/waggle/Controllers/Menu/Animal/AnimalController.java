@@ -54,6 +54,7 @@ public class AnimalController implements Initializable {
         setSearch();
         view();
         start();
+        setRefresh();
     }
 
     private void addListner() {
@@ -72,9 +73,25 @@ public class AnimalController implements Initializable {
     private void setSearchAnimal() throws SQLException {
         Statement st = com.example.waggle.Controllers.DataBaseConnector.getSt();
         String search = Search.getText();
-        String query = "select * from Animal where Animal_id = '" + search + "'";
 
-        getResult(st, query);
+        String query2 = "select * from Animal where Animal_id = '" + search + "'";
+
+        try {
+            ResultSet rs = st.executeQuery(query2);
+            while (rs.next()) {
+                Animal_id.setText(rs.getString("Animal_id"));
+                Cage_no.setText(rs.getString("Cage_no"));
+                Age.setText(rs.getString("Age"));
+                State.setText(rs.getString("State"));
+                Description.setText(rs.getString("Description"));
+                Meal_plan.setText(rs.getString("Meal_plan"));
+                Health_statues.setText(rs.getString("Health_statues"));
+                Keeper_ID.setText(rs.getString("Keeper_ID"));
+            }
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+
         Search.clear();
     }
 
@@ -204,5 +221,9 @@ public class AnimalController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    private void setRefresh() {
+        view();
+        start();
     }
 }

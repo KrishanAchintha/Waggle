@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane fx:id="Sponsor_lbl" prefHeight="720.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Sponsor.SponsorController">
-    <Label layoutX="338.0" layoutY="21.0" text="Sponsor">
-        <font>
-          <Font size="56.0"/>
-        </font>
-    </Label>
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="main" stylesheets="@../../../Styles/MenuBar/Sponsor.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.Sponsor.SponsorController">
+    <Pane layoutX="426.0" layoutY="91.2" prefHeight="582.0" prefWidth="370.0" styleClass="main_pane" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="91.0">
+        <Label layoutX="37.0" layoutY="116.0" prefHeight="18.0" prefWidth="40.0" styleClass="text_normal2" text="NIC :" />
+        <Label fx:id="NIC" layoutX="114.0" layoutY="116.0" styleClass="text_normal" text="Label" />
+        <Label layoutX="38.0" layoutY="155.0" prefHeight="18.0" prefWidth="78.0" styleClass="text_normal2" text="Address :" />
+        <Label fx:id="address" layoutX="114.0" layoutY="155.0" styleClass="text_normal" text="Label" />
+        <Label layoutX="38.0" layoutY="193.0" prefHeight="18.0" prefWidth="50.0" styleClass="text_normal2" text="Email :" />
+        <Label fx:id="phone" layoutX="114.0" layoutY="231.0" styleClass="text_normal" text="Label" />
+        <Label layoutX="38.0" layoutY="231.0" prefHeight="18.0" prefWidth="50.0" styleClass="text_normal2" text="Phone" />
+        <Label fx:id="email" layoutX="114.0" layoutY="193.0" styleClass="text_normal" text="Label" />
+        <Label fx:id="animalist" layoutX="114.0" layoutY="300.0" styleClass="text_normal" text="Label" />
+        <Label layoutX="37.0" layoutY="266.0" prefHeight="18.0" prefWidth="183.0" styleClass="text_normal2" text="Sponsored Animal List :" />
+        <Label fx:id="name" layoutX="134.0" layoutY="63.0" styleClass="text_topic" text="Sponsor Name" />
+    </Pane>
+    <TableView fx:id="sponsor" layoutX="23.0" layoutY="47.2" prefHeight="627.0" prefWidth="448.0" stylesheets="@../../../Styles/MenuBar/Sponsor.css" AnchorPane.bottomAnchor="45.59999999999991" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="409.0" AnchorPane.topAnchor="47.0">
+      <columns>
+          <TableColumn fx:id="nic" prefWidth="88.79999083280563" text="Sponsor ID" />
+          <TableColumn fx:id="s_name" prefWidth="93.60003662109375" text="Sponsor Name" />
+          <TableColumn fx:id="s_phone" prefWidth="111.99998474121094" text="Phone Number" />
+          <TableColumn fx:id="s_amount" prefWidth="148.00006103515625" text="Total Amount(sponsord)" />
+      </columns>
+    </TableView>
+    <TextField fx:id="searchtext" layoutX="441.0" layoutY="49.0" prefHeight="30.0" prefWidth="201.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="49.0" />
+    <Button fx:id="search_button" layoutX="698.0" layoutY="49.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" styleClass="Button" text="Search" AnchorPane.rightAnchor="103.60000000000002" AnchorPane.topAnchor="49.0" />
+    <Button fx:id="add" layoutX="792.0" layoutY="49.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" styleClass="Button" text="Add" AnchorPane.rightAnchor="33.6" AnchorPane.topAnchor="49.0" />
 </AnchorPane>

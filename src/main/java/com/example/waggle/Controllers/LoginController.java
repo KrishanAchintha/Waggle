@@ -19,7 +19,7 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import com.google.gson.Gson;
+
 
 public class LoginController implements Initializable {
 
@@ -54,11 +54,11 @@ public class LoginController implements Initializable {
                 return;
             } else {
 
-                url = "jdbc:sql6.freesqldatabase.com:3306 ";
+                url = "jdbc:mysql://sql6.freesqldatabase.com:3306/sql6702245";
                 extractedUsername = "sql6702245";
                 extractedPassword ="5EjAx8cGNr";
 
-
+                DataBaseConnector.getConnection();
 
                 Stage stage = (Stage) error_lbl.getScene().getWindow();
                 Models.getInstance().getViewManage().closeStage(stage);
@@ -66,9 +66,6 @@ public class LoginController implements Initializable {
             }
 
     }
-
-
-
 
 
     /*

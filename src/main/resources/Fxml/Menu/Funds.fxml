@@ -54,8 +54,8 @@
         <columns>
           <TableColumn fx:id="Name" prefWidth="80.79998779296875" text="Name" />
           <TableColumn fx:id="Address" prefWidth="88.800048828125" text="Address" />
-            <TableColumn fx:id="Date" prefWidth="92.00006103515625" text="Date" />
-            <TableColumn fx:id="Amount" prefWidth="132.79998779296875" text="Amount" />
+            <TableColumn fx:id="Date" prefWidth="92.00006103515625" text="Amount" />
+            <TableColumn fx:id="Amount" prefWidth="132.79998779296875" text="Date" />
         </columns>
       </TableView>
       <Pane layoutX="440.0" layoutY="388.0" prefHeight="310.0" prefWidth="426.0" styleClass="main_pane" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="13.600000000000023" AnchorPane.topAnchor="388.0">

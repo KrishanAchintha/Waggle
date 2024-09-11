@@ -1,6 +1,7 @@
 package com.example.waggle.Views;
 
 import com.example.waggle.Controllers.ClientController;
+import com.example.waggle.Controllers.Menu.Sponsor.SponsorAddFormController;
 import com.example.waggle.Controllers.Menu.Volunteer.VolunteerAddFormController;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -30,6 +31,8 @@ public class Viewfactory {
 
     private AnchorPane addAnimalFormView;
     private AnchorPane addVolunteerFormView;
+    private AnchorPane addSponsorFormView;
+    private AnchorPane addKeepingFormView;
 
 
 
@@ -81,7 +84,7 @@ public class Viewfactory {
     public AnchorPane getKeepinview() {
         if (Keepinview == null) {
             try {
-                Keepinview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Keeping.fxml")).load();
+                Keepinview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Keeping/Keeping.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -187,6 +190,32 @@ public AnchorPane getWaggle() {
             }
         }
         return addVolunteerFormView;
+    }
+
+
+    public AnchorPane getAddSponsorFormView() {
+        if (addSponsorFormView == null) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Menu/Sponsor/SponsorAddForm.fxml"));
+                addSponsorFormView = loader.load();
+                SponsorAddFormController controller = loader.getController();
+                addSponsorFormView.setUserData(controller);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return addSponsorFormView;
+    }
+
+    public AnchorPane getAddKeepingFormView() {
+        if (addKeepingFormView == null) {
+            try {
+                addKeepingFormView = new FXMLLoader(getClass().getResource("/Fxml/Menu/Keeping/addKeeping.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return addKeepingFormView;
     }
 
     public void showLogin(){

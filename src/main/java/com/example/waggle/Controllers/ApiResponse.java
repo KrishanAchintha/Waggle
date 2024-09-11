@@ -1,6 +1,6 @@
 package com.example.waggle.Controllers;
 
-import com.google.gson.annotations.SerializedName;
+
 
 public class ApiResponse {
     private DBInfo db;
@@ -25,7 +25,7 @@ public class ApiResponse {
     }
 
     static class DBInfo {
-         @SerializedName("connection_url")
+
         private String connection_url;
         private String password;
         private String username;

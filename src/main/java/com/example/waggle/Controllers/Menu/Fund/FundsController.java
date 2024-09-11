@@ -65,6 +65,8 @@ public class FundsController implements Initializable {
         setPayment_table();
         P_reset.setOnAction(e -> resetPayment());
         P_refresh.setOnAction(e -> setPaymentRefresh());
+
+        refreshpage();
     }
 
     private void addFund() {
@@ -75,7 +77,7 @@ public class FundsController implements Initializable {
         String date = F_date.getValue().toString();
 
         try {
-            st.executeUpdate("INSERT INTO Fund (F_name,F_address,F_amount,F_date) VALUES ('" + name + "', '" + address + "', '" + amount + "', '" + date + "')");
+            st.executeUpdate("INSERT INTO Fund (name,address,amount,date) VALUES ('" + name + "', '" + address + "', '" + amount + "', '" + date + "')");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -93,7 +95,7 @@ public class FundsController implements Initializable {
     private void setTotal_amount() {
         Statement st = com.example.waggle.Controllers.DataBaseConnector.getSt();
         try {
-            ResultSet rs = st.executeQuery("SELECT SUM(F_amount) FROM Fund");
+            ResultSet rs = st.executeQuery("SELECT SUM(amount) FROM Fund");
             rs.next();
             String FundTotal = rs.getString(1);
             ResultSet rs1 = st.executeQuery("SELECT SUM(Amount) FROM Payment");
@@ -149,7 +151,7 @@ public class FundsController implements Initializable {
         String amount = P_amount.getText();
 
         try {
-            st.executeUpdate("INSERT INTO Payment (Description,Date,Amount) VALUES ('" + description + "', '" + date + "', '" + amount + "')");
+            st.executeUpdate("INSERT INTO Payment (description,date,amount) VALUES ('" + description + "', '" + date + "', '" + amount + "')");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -187,6 +189,12 @@ public class FundsController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        setTotal_amount();
+    }
+
+    private void refreshpage(){
+        setRefresh();
+        setPaymentRefresh();
         setTotal_amount();
     }
 

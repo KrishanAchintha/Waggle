@@ -53,3 +53,12 @@
     -fx-cursor: hand;
     -fx-effect: dropshadow(three-pass-box ,#11999E, 5, 0, 0, 0);
 }
+
+.header_label {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+
+
+}

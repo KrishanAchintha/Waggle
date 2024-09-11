@@ -3,7 +3,7 @@ module com.example.waggle {
     requires javafx.fxml;
     requires javafx.web;
     requires java.net.http;
-    requires gson;
+
     requires java.sql;
 
 
@@ -26,4 +26,5 @@ module com.example.waggle {
     exports com.example.waggle.Controllers.Menu.Volunteer;
     exports com.example.waggle.Controllers.Menu.Fund;
     exports com.example.waggle.Controllers.Menu.Sponsor;
+    exports com.example.waggle.Controllers.Menu.Keeping;
 }

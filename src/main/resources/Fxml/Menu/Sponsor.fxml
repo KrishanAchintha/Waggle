@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane fx:id="Sponsor_lbl" prefHeight="720.0" prefWidth="880.0" styleClass="main" stylesheets="@../../Styles/MenuBar/Sponsor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.SponsorController" />

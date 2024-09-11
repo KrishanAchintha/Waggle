@@ -61,3 +61,8 @@
     -fx-cursor: hand;
     -fx-effect: dropshadow(three-pass-box ,#11999E, 5, 0, 0, 0);
 }
+.label{
+    -fx-font-size: 16px;
+    -fx-font-family: "Roboto Light";
+    -fx-text-fill: #000000;
+}

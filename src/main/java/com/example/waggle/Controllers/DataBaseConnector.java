@@ -28,7 +28,7 @@ public class DataBaseConnector {
     public static void getConnection()   {
 
         try {
-            conn = DriverManager.getConnection(LoginController.url, LoginController.extractedUsername, LoginController.extractedPassword);
+            conn = DriverManager.getConnection("jdbc:postgresql://ep-lingering-meadow-a1p6jb55.ap-southeast-1.aws.neon.tech/waggledb", "waggledb_owner", "3HXpeRU7OfaP");
             setConn(conn);
             if (conn != null) {
                 System.out.println("Connected to the database");

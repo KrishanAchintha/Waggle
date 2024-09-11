@@ -90,4 +90,6 @@ public class MenuController  implements Initializable{
     public void onWaggle() {
         Models.getInstance().getViewManage().getClientSelectedMenuItem().set("Waggle");
     }
+
+
 }
