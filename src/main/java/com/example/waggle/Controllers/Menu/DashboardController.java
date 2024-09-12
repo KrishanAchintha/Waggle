@@ -21,12 +21,14 @@ public class DashboardController implements Initializable
     public Label Volunteer_count;
     public Label Total_amount;
     public ScatterChart<String,Number> scatterChart;
+    public Label Sponsor_count;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         setAnimal_label();
         setTotal_amount();
         setScatterChart();
+        setSponsor_count();
     }
 
     private void setAnimal_label(){
@@ -104,6 +106,20 @@ public class DashboardController implements Initializable
 
 
         scatterChart.getData().add(series);
+    }
+
+
+    public  void setSponsor_count(){
+        Statement st = com.example.waggle.Controllers.DataBaseConnector.getSt();
+        try {
+            String query = "SELECT COUNT(*) FROM Sponsor";
+            ResultSet rs = st.executeQuery(query);
+            while (rs.next()) {
+                Sponsor_count.setText(rs.getString(1));
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

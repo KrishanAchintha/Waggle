@@ -114,7 +114,7 @@ public class Viewfactory {
     public AnchorPane getAdvertisementsview() {
         if (Advertisementsview == null) {
             try {
-                Advertisementsview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Advertisement.fxml")).load();
+                Advertisementsview = new FXMLLoader(getClass().getResource("/Fxml/Menu/Adopt.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }

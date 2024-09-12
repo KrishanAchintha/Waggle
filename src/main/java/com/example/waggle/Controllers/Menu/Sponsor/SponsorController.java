@@ -42,6 +42,7 @@ public class SponsorController implements Initializable {
         addListner();
         setDefault();
         setTable();
+        setDefaultValues();
     }
 
 
@@ -91,6 +92,23 @@ public class SponsorController implements Initializable {
         }
     }
 
+    public void setDefaultValues(){
+        Statement  st = DataBaseConnector.getSt();
+        try {
+            String query = "SELECT * FROM Sponsor limit 1";
+            var rs = st.executeQuery(query);
+            while (rs.next()) {
+                NIC.setText(rs.getString("NIC"));
+                name.setText(rs.getString("name"));
+                address.setText(rs.getString("address"));
+                phone.setText(rs.getString("phonenumber"));
+                email.setText(rs.getString("email"));
+                animalist.setText(rs.getString("animalid"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void setDefault(){
         NIC.setText("");

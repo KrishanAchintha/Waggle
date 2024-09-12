@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.MenuController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.MenuController">
    <AnchorPane prefHeight="720.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/Menu.css">
       <VBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" styleClass="main_menu" stylesheets="@../Styles/Menu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -65,7 +65,7 @@
                </ImageView>
             </graphic>
          </Button>
-         <Button fx:id="Advertisement_btn" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" stylesheets="@../Styles/Menu.css" text="Advertisment">
+         <Button fx:id="Advertisement_btn" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" stylesheets="@../Styles/Menu.css" text="Adopt_Request">
             <graphic>
                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                   <Image url="@../Images/Menu/online-advertising.png" />

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="background_main" stylesheets="@../../Styles/MenuBar/Animal/AnimalForm.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.AdoptRequest.AdoptController">
+   <children>
+      <Pane layoutX="498.0" layoutY="28.0" prefHeight="662.0" prefWidth="367.0" styleClass="form">
+         <children>
+            <Label fx:id="phonelabel" layoutX="96.0" layoutY="126.0" text="phone" />
+            <Label fx:id="namelabel" layoutX="98.0" layoutY="81.0" text="name" wrapText="true" />
+         </children>
+      </Pane>
+      <TableView fx:id="AdoptionRequestTable" layoutX="25.0" layoutY="29.0" prefHeight="662.0" prefWidth="466.0" AnchorPane.leftAnchor="24.80000000000001" AnchorPane.rightAnchor="388.6">
+        <columns>
+          <TableColumn fx:id="adopt_name" prefWidth="104.80001831054688" text="Name" />
+          <TableColumn fx:id="adopt_phone" prefWidth="84.80001831054688" text="Phone" />
+            <TableColumn fx:id="AdoptionRequest" prefWidth="138.4000244140625" text="Adoption Request" />
+            <TableColumn fx:id="economylifestyle" prefWidth="136.0" text="Economy &amp; Lifestyle" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="509.0" layoutY="42.0" prefHeight="26.0" prefWidth="217.0" styleClass="form_text_field" AnchorPane.rightAnchor="153.39999999999998" />
+      <Button fx:id="search_button" layoutX="744.0" layoutY="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" styleClass="form_button" text="Search" AnchorPane.rightAnchor="26.0" />
+      <Label layoutX="514.6" layoutY="110.0" text="Name :" AnchorPane.rightAnchor="327.79999999999995" />
+      <Label layoutX="513.8" layoutY="154.0" prefHeight="18.0" prefWidth="48.0" text="Phone :" AnchorPane.rightAnchor="318.20000000000005" />
+      <Label layoutX="512.1999999999999" layoutY="193.0" text=" Adoption Request :" AnchorPane.rightAnchor="262.20000000000005" />
+      <Label fx:id="request" layoutX="639.0" layoutY="193.0" prefHeight="92.0" prefWidth="210.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" wrapText="true" AnchorPane.rightAnchor="30.599999999999994" />
+      <Label layoutX="513.0" layoutY="293.0" text="Economy &amp; LifeStyle :" AnchorPane.rightAnchor="251.79999999999995" />
+      <Label fx:id="economy" layoutX="639.0" layoutY="293.0" prefHeight="92.0" prefWidth="210.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" wrapText="true" AnchorPane.rightAnchor="30.600000000000023" />
+      <Button fx:id="reject_btn" layoutX="763.0" layoutY="440.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" styleClass="form_button" text="Reject" />
+   </children>
+</AnchorPane>

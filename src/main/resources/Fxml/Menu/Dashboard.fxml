@@ -8,10 +8,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="720.0" prefWidth="880.0" styleClass="main" stylesheets="@../../Styles/MenuBar/Dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.waggle.Controllers.Menu.DashboardController">
    <children>
-      <Pane layoutX="14.0" layoutY="234.0" prefHeight="434.0" prefWidth="574.0" styleClass="main_pane" AnchorPane.bottomAnchor="51.200000000000045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="291.20000000000005" AnchorPane.topAnchor="234.0" />
+      <Pane layoutX="15.2" layoutY="234.0" prefHeight="458.0" prefWidth="574.0" styleClass="main_pane" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="291.0" AnchorPane.topAnchor="234.0" />
       <Pane layoutX="314.4" layoutY="15.2" prefHeight="200.0" prefWidth="274.0" styleClass="main_pane" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="15.0">
          <children>
             <Label fx:id="Total_count" layoutX="150.0" layoutY="101.0" styleClass="text_normal2" text="L" />
@@ -28,15 +32,20 @@
       <Label layoutX="344.0" layoutY="115.0" styleClass="text_normal" text="Keeping  amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="427.2" AnchorPane.topAnchor="115.0" />
       <Label layoutX="344.0" layoutY="87.0" styleClass="text_normal" text="Advertisement amount :" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="391.2" AnchorPane.topAnchor="87.0" />
       <Label fx:id="Keeping_count" layoutX="440.8" layoutY="63.8" styleClass="text_normal2" text="L" AnchorPane.leftAnchor="440.8" AnchorPane.rightAnchor="430.4" AnchorPane.topAnchor="63.8" />
-      <ImageView fitHeight="104.0" fitWidth="170.0" layoutX="708.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="18.595199584960938" AnchorPane.topAnchor="602.0">
+      <ImageView fitHeight="104.0" fitWidth="170.0" layoutX="659.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="67.59519958496094" AnchorPane.topAnchor="588.0">
          <image>
             <Image url="@../../Images/Login/logingWindow.png" />
          </image>
       </ImageView>
       <Label layoutX="636.0" layoutY="29.0" styleClass="text_topic" text="Volunteer " AnchorPane.rightAnchor="130.39999999999998" AnchorPane.topAnchor="29.0" />
-      <Label layoutX="637.0" layoutY="63.0" styleClass="text_normal" text="Current Volunteer amount :" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="63.0" />
+      <Label layoutX="637.0" layoutY="63.0" styleClass="text_normal" text="Current Volunteer Count :" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="63.0" />
       <Label fx:id="Volunteer_count" layoutX="809.6" layoutY="65.0" prefHeight="18.0" prefWidth="37.0" styleClass="text_normal2" text="L" AnchorPane.rightAnchor="32.799999999999955" AnchorPane.topAnchor="65.0" />
-      <Pane layoutX="611.0" layoutY="127.0" prefHeight="90.0" prefWidth="250.0" styleClass="main_pane" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="127.0" />
+      <Pane layoutX="611.0" layoutY="127.0" prefHeight="90.0" prefWidth="250.0" styleClass="main_pane" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="127.0">
+         <children>
+            <Label layoutX="29.0" layoutY="14.0" styleClass="text_topic" text="Sponsor" />
+            <Label layoutX="29.0" layoutY="45.0" styleClass="text_normal" text="Current  Sponsor Count :" />
+            <Label fx:id="Sponsor_count" layoutX="181.0" layoutY="45.0" prefHeight="18.0" prefWidth="37.0" styleClass="text_normal2" text="L" />
+         </children></Pane>
       <ScatterChart fx:id="scatterChart" layoutX="30.0" layoutY="261.0" prefHeight="400.0" prefWidth="521.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="328.4000000000001" AnchorPane.topAnchor="260.79999999999995">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
@@ -45,5 +54,26 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </ScatterChart>
+      <Label layoutX="622.0" layoutY="246.0" prefHeight="332.0" prefWidth="227.0" styleClass="text_topic2" text="CARE FOR PAWS HEARTS FOLLOW " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.32300884955752207" centerY="0.21969694802255335" focusDistance="-0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1704704314470291" green="0.062300194054841995" blue="0.9894737005233765" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
    </children>
 </AnchorPane>

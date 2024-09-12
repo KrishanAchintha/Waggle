@@ -36,6 +36,7 @@ public class KeepingController implements Initializable {
         search_btn.setOnAction(event -> search());
         remove_btn.setOnAction(event -> remove());
         setTable();
+        defaultView();
 
         k_nic.setCellValueFactory(new PropertyValueFactory<>("nic"));
         k_name.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -93,6 +94,26 @@ public class KeepingController implements Initializable {
             e.printStackTrace();
         }
     }
+
+    public void defaultView(){
+        Statement st = DataBaseConnector.getSt();
+        try {
+            st.execute("SELECT * FROM keeper limit 1");
+
+            while (st.getResultSet().next()) {
+                NIC.setText(st.getResultSet().getString("keeper_name"));
+                address.setText(st.getResultSet().getString("keeper_address"));
+                phone.setText(st.getResultSet().getString("keeper_phonenumber"));
+                email.setText(st.getResultSet().getString("keeper_email"));
+                animalist.setText(st.getResultSet().getString("animalid"));
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public void reset() {
         NIC.setText("");

@@ -37,3 +37,11 @@
     -fx-fill: #000000;
     -fx-font-family:"Arial Black";
 }
+
+.text_topic2{
+    -fx-font-size: 38;
+    -fx-font-weight: bold;
+    -fx-fill: #000000;
+    -fx-font-family:"Arial Black";
+
+}
